@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+label{
+    @apply block font-semibold text-lg text-slate-800
+}
+
+select{
+    @apply border py-2 w-40 rounded-md focus:border-2 focus:border-teal-400
+}
+
+input, textarea{
+    @apply w-full border rounded-md focus:border-teal-400 focus:outline-none p-2
+}
